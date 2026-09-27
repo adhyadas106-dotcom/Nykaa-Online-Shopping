@@ -438,7 +438,7 @@
     });
 
     if (categoryScroll) {
-      categoryScroll.addEventListener('scroll', updateCategoryScrollButtons);
+      categoryScroll.addEventListener('scroll', updateCategoryScrollButtons, { passive: true });
       updateCategoryScrollButtons();
     }
   </script>
@@ -625,52 +625,6 @@
     </div>
   </div>
    </div>
-
-  <script>
-    const categoryScroll = document.getElementById('drs');
-    const leftScrollBtn = document.querySelector('.scroll-btn.left');
-    const rightScrollBtn = document.querySelector('.scroll-btn.right');
-
-    function updateCategoryScrollButtons() {
-      if (!categoryScroll || !leftScrollBtn || !rightScrollBtn) return;
-
-      const maxScrollLeft = categoryScroll.scrollWidth - categoryScroll.clientWidth;
-
-      if (categoryScroll.scrollLeft <= 20) {
-        leftScrollBtn.classList.add('hidden');
-        rightScrollBtn.classList.remove('hidden');
-      } else if (categoryScroll.scrollLeft >= maxScrollLeft - 20) {
-        leftScrollBtn.classList.remove('hidden');
-        rightScrollBtn.classList.add('hidden');
-      } else {
-        leftScrollBtn.classList.remove('hidden');
-        rightScrollBtn.classList.remove('hidden');
-      }
-    }
-
-    document.querySelectorAll('.scroll-btn').forEach((button) => {
-      button.addEventListener('click', () => {
-        const targetId = button.dataset.scrollTarget;
-        const direction = button.dataset.direction === 'left' ? -1 : 1;
-        const scrollTarget = document.getElementById(targetId);
-
-        if (!scrollTarget) return;
-
-        const amount = Math.max(scrollTarget.clientWidth * 0.75, 220);
-        scrollTarget.scrollBy({
-          left: direction * amount,
-          behavior: 'smooth'
-        });
-
-        setTimeout(updateCategoryScrollButtons, 250);
-      });
-    });
-
-    if (categoryScroll) {
-      categoryScroll.addEventListener('scroll', updateCategoryScrollButtons);
-      updateCategoryScrollButtons();
-    }
-  </script>
 
  <div class="bg-[#d33725] flex items-center justify-center w-full">
 
