@@ -41,14 +41,17 @@ body {
 }
 
 /* Hide Scrollbars Across Horizontal Scroll Areas */
+.scrollbar-none,
 #drs,
 #color,
 #carouselContainer,
 .no-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  overflow-x: auto;
 }
 
+.scrollbar-none::-webkit-scrollbar,
 #drs::-webkit-scrollbar,
 #color::-webkit-scrollbar,
 #carouselContainer::-webkit-scrollbar,
@@ -81,7 +84,7 @@ body {
 .category-wrapper {
   position: relative;
   width: 100%;
-  margin: 20px;
+  margin: 0;
   padding: 0;
   overflow: hidden;
 }
@@ -244,7 +247,7 @@ img{
   margin-top: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
-  margin-left: 7%;
+  margin-left: 0;
 }
 
 /* Hover state effect */
