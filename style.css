@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-dark: #0c0d0f;
+  --bg-soft: #f6f1ef;
+  --text: #141414;
+  --muted: #4a4a4a;
+  --line: #e8e1de;
+  --pink: #ff4e9a;
+  --pink-dark: #e50f78;
+  --shadow: rgba(10, 10, 10, 0.12);
+}
+
+/* FIX: Do NOT set overflow-x: hidden on html/body as it breaks position: sticky */
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  color: var(--text);
+}
+
+/* FIX: Fixed sticky main header setup */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+}
+
+.main-header {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Hide Scrollbars Across Horizontal Scroll Areas */
+#drs,
+#color,
+#carouselContainer,
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#drs::-webkit-scrollbar,
+#color::-webkit-scrollbar,
+#carouselContainer::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* FIX: Cleaned horizontal category navigation bar */
+#drs {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding: 16px 48px;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#drs > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+/* FIX: Horizontal category wrapper */
+.category-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #111;
+  font-size: 24px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+
+.promo-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.promo-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .main-header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .category-wrapper {
+    margin: 16px 0;
+  }
+
+  #drs {
+    padding: 12px 18px;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-strip {
+    justify-content: center;
+    gap: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    flex-wrap: wrap;
+  }
+
+  .main-header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .main-header > div:first-child {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main-header > div:last-child {
+    width: 100%;
+  }
+
+  #drs {
+    padding: 12px 10px;
+    gap: 12px;
+  }
+
+  #drs > a {
+    min-width: 92px;
+  }
+
+  .scroll-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-strip {
+    font-size: 11px;
+  }
+
+  .main-header .space-x-3,
+  .main-header .sm\:space-x-8 {
+    gap: 8px;
+  }
+
+  .main-header .w-full.sm\:w-56,
+  .main-header .sm\:w-56 {
+    width: 100%;
+  }
+
+  .main-header .justify-between.min-w-fit {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+button,
+input {
+  font: inherit;
+}
+#luxury{
+  width: 100%;
+  height: 800px;
+  background-color: rgb(55, 3, 30);
+}
+img{
+  justify-content: center;
+}
+.disclaimer{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.05); /* Small, subtle initial shadow */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.disclaimer-card {
+  background-color: #f8f5f4;
+  border: 1px solid #efb08d;
+  border-radius: 16px;
+  padding: 18px 20px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  margin-left: 7%;
+}
+
+/* Hover state effect */
+.disclaimer:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow on hover */
+  transform: translateY(-2px); /* Optional subtle lift effect */
+}
+
+.disclaimer-title {
+  color: #bd2109; /* Deep orange-red for warning */
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  
+}
+
+.disclaimer-text {
+  color: #666666;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+#text{
+  padding: 0%;
+}

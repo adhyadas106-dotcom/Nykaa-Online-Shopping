@@ -1,0 +1,1609 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nykaa Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+        }
+        .font-serif-title {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+
+
+    <style>
+    /* Custom Gold Border Styling */
+    .gold-border {
+      border: 1.5px solid #d4af37;
+    }
+    .serif-text {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  </style>
+  <style>
+    /* Hide Scrollbars Across Horizontal Scroll Areas */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Card styling */
+    .wedding-card {
+      min-width: 220px;
+      max-width: 220px;
+      height: 340px;
+    }
+  </style>
+  </head>
+  <body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <header class="site-header">
+      <!-- Top Dark Bar -->
+      <div class="top-strip bg-[#1c1c1c] text-gray-300 text-xs py-1.5 px-4 flex justify-end space-x-6 ">
+        <button class="flex items-center space-x-1.5 hover:text-white">
+          <i class="bi bi-phone text-sm"></i>
+          <span>App Download</span>
+        </button>
+        <button class="flex items-center space-x-1.5 hover:text-white">
+          <i class="bi bi-question-circle text-sm"></i>
+          <span>Help</span>
+        </button>
+      </div>
+
+      <!-- Main Navigation Bar -->
+      <div class="main-header sticky-navbar border-b border-gray-200 py-3 px-4 md:px-6 flex flex-wrap items-center justify-between gap-3">
+    
+    <!-- Left Side: Logo & Links -->
+    <div class="flex items-center sticky-navbar space-x-3 sm:space-x-8 min-w-0">
+      <!-- Placeholder for NYKAA FASHION Logo -->
+      <div class="text-lg sm:text-xl sticky-navbar font-bold tracking-tight whitespace-nowrap">
+        <span class="text-pink-600 italic">NYKAA</span><span class="font-light">FASHION</span>
+      </div>
+      <nav class="hidden sticky-navbar md:flex space-x-4 lg:space-x-6 text-sm font-medium  text-gray-800">
+        <a href="#" class="hover:text-pink-600">Women</a>
+        <a href="#" class="hover:text-pink-600">Men</a>
+        <a href="#" class="hover:text-pink-600">Kids</a>
+        <a href="#" class="hover:text-pink-600">Home</a>
+        <a href="#" class="hover:text-pink-600">All Brands</a>
+        <a href="#" class="hover:text-pink-600 flex items-center">More <i class="bi bi-chevron-down ml-1 text-[10px]"></i></a>
+      </nav>
+    </div>
+
+    <!-- Right Side: Search & Icons -->
+    <div class="flex items-center justify-end flex-wrap gap-3 sm:gap-5 w-full md:w-auto">
+      
+      <!-- Search Input with Absolute Icon -->
+      <div class="relative w-full sm:w-56 md:w-72">
+        <i class="bi bi-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 font-bold"></i>
+        <input type="text" class="w-full pl-9 pr-4 py-2 bg-gray-100 text-sm rounded-md focus:outline-none focus:ring-1 focus:ring-gray-300" placeholder="Search for products, styles, b">
+      </div>
+      <!-- Fashion / Luxe Toggle -->
+<div class="flex items-center bg-gray-200 rounded-full p-1 mx-0 sm:mx-4">
+  <!-- Active: Fashion -->
+  <button class="flex flex-col items-center justify-center bg-white rounded-full px-2 py-1 shadow-sm w-14 sm:w-16">
+    <span class="font-serif italic font-bold text-sm leading-none text-black">N</span>
+    <span class="text-[9px] font-semibold mt-0.5 text-black">Fashion</span>
+  </button>
+  
+  <!-- Inactive: Luxe -->
+  <button class="flex flex-col items-center justify-center rounded-full px-2 py-1 w-14 sm:w-16 text-gray-800 hover:text-black">
+    <i class="bi bi-flower1 text-[13px] leading-none font-bold"></i>
+    <span class="text-[9px] font-medium mt-0.5">Luxe</span>
+  </button>
+</div>
+
+      <!-- Icon Group -->
+      <div class="flex items-center gap-2 sm:gap-5 text-gray-800 justify-between min-w-fit">
+        <!-- Account -->
+        <button class="flex flex-col items-center hover:text-pink-600">
+          <i class="bi bi-person text-[20px] sm:text-[22px] leading-none mb-1"></i>
+          <span class="text-[10px] sm:text-[11px] font-semibold">Account</span>
+        </button>
+
+        <!-- Wishlist -->
+        <button class="flex flex-col items-center hover:text-pink-600">
+          <i class="bi bi-heart text-[20px] sm:text-[22px] leading-none mb-1"></i>
+          <span class="text-[10px] sm:text-[11px] font-semibold">Wishlist</span>
+        </button>
+
+        <!-- Cart with Notification Badge -->
+        <button class="flex flex-col items-center hover:text-pink-600 relative">
+          <div class="relative mb-1">
+            <i class="bi bi-bag text-[20px] sm:text-[22px] leading-none"></i>
+            <span class="absolute -top-1.5 -right-2 bg-pink-600 text-white text-[10px] font-bold rounded-full h-[18px] w-[18px] flex items-center justify-center border-2 border-white">
+              0
+            </span>
+          </div>
+          <span class="text-[10px] sm:text-[11px] font-semibold">Cart</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+   <a href="#" class="promo-link" aria-label="View festive sale offer">
+      <img src="./Screenshot 2026-09-25 104056.png" alt="Nykaa Fashion Grand Festival Sale" width="100%" />
+   </a>
+   
+   <div class=" max-w-8xl mx-auto relative category-wrapper  mt-5">
+      <button class="scroll-btn left hidden" type="button" aria-label="Scroll categories left" data-scroll-target="drs" data-direction="left">
+        <span>‹</span>
+      </button>
+
+      <!-- Scrollable Container -->
+      <div id="drs" class="flex overflow-x-auto   scroll-smooth">
+          
+          <!-- 1. Westernwear -->
+          <a href="#" class="flex flex-col items-center min-w-[110px] group">
+              <!-- Radial Glow Background -->
+              <div class=" h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,192,203,0.8)_0%,rgba(255,255,255,0)_70%)]">
+                  <!-- Replace src with your transparent PNG -->
+                  <img src="./Screenshot 2026-09-25 130433.png" alt="Westernwear" class="h-[120%] object-contain -mb-2">
+              </div>
+              <!-- Text Badge -->
+              <span class="bg-[#ffbca3] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Westernwear</span>
+          </a>
+
+          <!-- 2. Indianwear -->
+          <a href="#" class="flex flex-col items-center min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,192,203,0.8)_0%,rgba(255,255,255,0)_70%)]">
+                  <img src="./Screenshot 2026-09-25 123414.png" alt="Indianwear" class="h-[120%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffbca3] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Indianwear</span>
+          </a>
+
+          <!-- 3. Men -->
+          <a href="#" class="flex flex-col items-center  min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,192,203,0.6)_0%,rgba(255,255,255,0)_70%)]">
+                  <img src="./Screenshot 2026-09-25 124311.png" alt="Men" class="h-[120%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffbca3] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Men</span>
+          </a>
+
+          <!-- 4. Kids -->
+          <a href="#" class="flex flex-col items-center min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,235,153,0.8)_0%,rgba(255,255,255,0)_70%)] ">
+                  <img src="./Screenshot 2026-09-25 124905.png" alt="Kids" class="h-[120%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffb6c1] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Kids</span>
+          </a>
+
+          <!-- 5. Home -->
+          <a href="#" class="flex flex-col items-center min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,235,153,0.8)_0%,rgba(255,255,255,0)_70%)]">
+                  <img src="./Screenshot 2026-09-25 125312.png" alt="Home" class="h-[100%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffb6c1] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Home</span>
+          </a>
+
+          <!-- 6. Footwear -->
+          <a href="#" class="flex flex-col items-center min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,192,203,0.8)_0%,rgba(255,255,255,0)_70%)] ">
+                  <img src="./Screenshot 2026-09-25 125501.png" alt="Footwear" class="h-[90%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffbca3] text-black text-[15px] font-medium px-2  py-1 rounded-md w-full text-center">Footwear</span>
+          </a>
+
+          <!-- 7. Lingerie -->
+          <a href="#" class="flex flex-col items-center min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,235,153,0.8)_0%,rgba(255,255,255,0)_70%)]">
+                  <img src="./Screenshot 2026-09-25 125703.png" alt="Lingerie" class="h-[120%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffb6c1] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Lingerie</span>
+          </a>
+
+          <!-- 8. Bags -->
+          <a href="#" class="flex flex-col items-center min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,192,203,0.8)_0%,rgba(255,255,255,0)_70%)]">
+                  <img src="./Screenshot 2026-09-25 130017.png" alt="Bags" class="h-[90%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffbca3] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Bags</span>
+          </a>
+
+          <!-- 9. Activewear -->
+          <a href="#" class="flex flex-col items-center  min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,235,153,0.8)_0%,rgba(255,255,255,0)_70%)] ">
+                  <img src="./Screenshot 2026-09-25 130228.png" alt="Activewear" class="h-[120%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffb6c1] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Activewear</span>
+          </a>
+          <!-- 10. Jewellary -->
+          <a href="#" class="flex flex-col items-center  min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,235,153,0.8)_0%,rgba(255,255,255,0)_70%)] ">
+                  <img src="./Screenshot 2026-09-25 131335.png" alt="Jewellary" class="h-[120%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffb6c1] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Jewellary</span>
+          </a>
+          <!-- 11. Sneakers -->
+          <a href="#" class="flex flex-col items-center  min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,235,153,0.8)_0%,rgba(255,255,255,0)_70%)]">
+                  <img src="./Screenshot 2026-09-25 131633.png" alt="Sneakers" class="h-[120%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffb6c1] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Sneakers</span>
+          </a>
+          <!-- 12. Watches -->
+          <a href="#" class="flex flex-col items-center min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,235,153,0.8)_0%,rgba(255,255,255,0)_70%)] ">
+                  <img src="./Screenshot 2026-09-25 131852.png" alt="Watches" class="h-[120%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffb6c1] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Watches</span>
+          </a>
+          <!-- 13. Sunglasses -->
+          <a href="#" class="flex flex-col items-center min-w-[110px] group">
+              <div class="w-28 h-28 flex justify-center items-end bg-[radial-gradient(circle,rgba(255,235,153,0.8)_0%,rgba(255,255,255,0)_70%)] ">
+                  <img src="./Screenshot 2026-09-25 132059.png" alt="Sunglasses" class="h-[120%] object-contain -mb-2">
+              </div>
+              <span class="bg-[#ffb6c1] text-black text-[15px] font-medium px-2 py-1 rounded-md w-full text-center">Sunglasses</span>
+          </a>
+
+      </div>
+
+      <button class="scroll-btn right" type="button" aria-label="Scroll categories right" data-scroll-target="drs" data-direction="right">
+        <span>›</span>
+      </button>
+    </div>
+
+    
+    <!-- styles to celebrate in -->
+
+   <div class="bg-[white] text-[#140029] p-2 mt-2 ">
+
+  <div class="max-w-7xl mx-auto relative">
+    
+    <!-- Title matching exact brand styling -->
+    <h2 class="text-[22px] font-bold mb-5 tracking-tight text-[#0F1111]">
+      Styles to celebrate in
+    </h2>
+
+    <!-- offers -->
+    <div class="discounts">
+      <!-- Scrollable Container with Equal Spacing -->
+      <div 
+        id="discounts" 
+        class="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar py-2">
+
+        <!-- Card 1 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-25 184214.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-26 140218.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 3-->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-26 223025.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-26 223202.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-25 145058.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-26 223057.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-26 223131.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-25 142226.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-26 223119.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 10 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-25 144433.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 11 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-25 143341.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 12 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-25 144247.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+        <!-- Card 13 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[260px] flex  justify-between cursor-pointer ">
+          <div class="relative  bg-white  overflow-hidden shadow-sm">
+            <img src="./Screenshot 2026-09-25 144407.png" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+        
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+   </div>
+
+  <script>
+    const categoryScroll = document.getElementById('drs');
+    const leftScrollBtn = document.querySelector('.scroll-btn.left');
+    const rightScrollBtn = document.querySelector('.scroll-btn.right');
+
+    function updateCategoryScrollButtons() {
+      if (!categoryScroll || !leftScrollBtn || !rightScrollBtn) return;
+
+      const maxScrollLeft = categoryScroll.scrollWidth - categoryScroll.clientWidth;
+
+      if (categoryScroll.scrollLeft <= 20) {
+        leftScrollBtn.classList.add('hidden');
+        rightScrollBtn.classList.remove('hidden');
+      } else if (categoryScroll.scrollLeft >= maxScrollLeft - 20) {
+        leftScrollBtn.classList.remove('hidden');
+        rightScrollBtn.classList.add('hidden');
+      } else {
+        leftScrollBtn.classList.remove('hidden');
+        rightScrollBtn.classList.remove('hidden');
+      }
+    }
+
+    document.querySelectorAll('.scroll-btn').forEach((button) => {
+      button.addEventListener('click', () => {
+        const targetId = button.dataset.scrollTarget;
+        const direction = button.dataset.direction === 'left' ? -1 : 1;
+        const scrollTarget = document.getElementById(targetId);
+
+        if (!scrollTarget) return;
+
+        const amount = Math.max(scrollTarget.clientWidth * 0.75, 220);
+        scrollTarget.scrollBy({
+          left: direction * amount,
+          behavior: 'smooth'
+        });
+
+        setTimeout(updateCategoryScrollButtons, 250);
+      });
+    });
+
+    if (categoryScroll) {
+      categoryScroll.addEventListener('scroll', updateCategoryScrollButtons);
+      updateCategoryScrollButtons();
+    }
+  </script>
+
+
+
+    <!-- the big brand guestlist -->
+
+   <div class="bg-[#FFF0F2] text-[#140029] p-8 mt-3">
+
+  <div class="max-w-7xl mx-auto relative">
+    
+    <!-- Title matching exact brand styling -->
+    <h2 class="text-[22px] font-bold mb-5 tracking-tight text-[#0F1111]">
+      The Big Brand Guestlist
+    </h2>
+
+    <!-- Carousel Wrapper -->
+    <div class="relative group">
+      <!-- Scrollable Container with Equal Spacing -->
+      <div 
+        id="carouselContainer" 
+        class="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar py-2">
+
+        <!-- Card 1 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://assets.myntassets.com/f_auto,q_auto:eco,dpr_1.3,w_412,c_limit,fl_progressive/w_412,h_412,q_50,,dpr_3,fl_progressive,f_webp/assets/images/2026/JULY/20/e9K6JJ8v_0cb70ca28fa34c078dc8dd500dd9bd39.jpg" alt="U.S. POLO ASSN." class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">H & M.</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Up to 50% off + Extra 20%</p>
+          </div>
+        </div>
+
+         <!-- Card 2 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://i.pinimg.com/736x/1f/68/3f/1f683f967c7bb44876d192f4e559d6c0.jpg" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">NYRAA</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Upto 45% off</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://i.pinimg.com/736x/d4/95/5c/d4955cd9af8ced6aeccb94f15334f6e6.jpg" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">DENIM</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">MIN 35% off</p>
+          </div>
+        </div>
+        <!-- Card 4-->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://i.pinimg.com/736x/ca/89/42/ca8942d37d476f5619850073f2a2ac73.jpg" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">ANCOSTI</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Upto 10% off</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://i.pinimg.com/736x/ea/29/4e/ea294efe85689faa4362c6db2b270e66.jpg" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">ZOKI JEWELLARY</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Upto 45% off</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScKxH32LX0ahs_As7CW-9_A4nkgsCNC0dQFbxqfRltcOp-bmFTAvhKUOU&s=10" alt="Libas" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">Libas</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Min 40% off</p>
+          </div>
+        </div>
+
+        <!-- Card 7-->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://images-static.nykaa.com/uploads/161f93b5-d545-4602-b5ef-c126edc7bf51.jpg?tr=cm-pad_resize,w-300" alt="Twenty Dresses" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">Twenty Dresses</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Up to 80% off</p>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://images-static.nykaa.com/uploads/f75a65d8-43f8-4b1b-98f5-6ba263c5ada4.jpg?tr=cm-pad_resize,w-300" alt="Nykd" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">PUMA <span class="font-normal text-[10px]">BY NYKAA</span></h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Min 40-60% off</p>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://assets.myntassets.com/w_412,q_50,,dpr_3,fl_progressive,f_webp/assets/images/2026/FEBRUARY/23/Kn42Ilx5_6a4ac33573e646a1bd51ca851b640754.jpg" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">AutumnLane</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Min 50% off</p>
+          </div>
+        </div>
+        <!-- Card 10-->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSIpk5ChKTxv6HIAKHOi6jbhFWyQnOyCElVBZy6bTJXZKMsMxBaMb6R0g&s=10" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">CIDER</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Upto 70% off</p>
+          </div>
+        </div>
+        <!-- Card11 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://images-static.nykaa.com/uploads/0368b715-bee6-470c-9bfa-15b170d5d656.jpg?tr=cm-pad_resize,w-300" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">US POLO ASSN.</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Min 40% off</p>
+          </div>
+        </div>
+        <!-- Card 12 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdG1yXrJFC15lwkDSmuUTDEZfrajAPjG-p7j7DkDCEa95eHDP8ouliHr8&s=10" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">NIKE</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Upto 45% off</p>
+          </div>
+        </div>
+        <!-- Card 13-->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://i.mdel.net/i/db/2017/10/792840/792840-800w.jpg" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">TOMMY HILFIGER</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Min 30% off</p>
+          </div>
+        </div>
+        <!-- Card 14 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/3_4Ratio/SearchINT/Lge/N48078.jpg?im=Resize,width=450" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">LINZI</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">MIN 40% off</p>
+          </div>
+        </div>
+        <!-- Card 15 -->
+        <div class="flex-none w-[200px] sm:w-[220px] md:w-[240px] flex flex-col justify-between cursor-pointer group/card transition-transform duration-200 hover:-translate-y-1">
+          <div class="relative aspect-[3/4] bg-white rounded-md overflow-hidden shadow-sm">
+            <img src="https://www.wholesaletextile.in/product-img/Rangoon-Soch-Kurti-Bottom-With5-1732017726.jpeg" alt="Autumn Lane" class="w-full h-full object-cover">
+          </div>
+          <div class="pt-3 text-center">
+            <h3 class="font-bold text-[#140029] tracking-wider uppercase text-xs">SOCH</h3>
+            <p class="text-[#0F1111] font-bold text-base mt-0.5">Upto 50% off</p>
+          </div>
+        </div>
+       
+
+      </div>
+
+    </div>
+  </div>
+   </div>
+
+  <script>
+    const categoryScroll = document.getElementById('drs');
+    const leftScrollBtn = document.querySelector('.scroll-btn.left');
+    const rightScrollBtn = document.querySelector('.scroll-btn.right');
+
+    function updateCategoryScrollButtons() {
+      if (!categoryScroll || !leftScrollBtn || !rightScrollBtn) return;
+
+      const maxScrollLeft = categoryScroll.scrollWidth - categoryScroll.clientWidth;
+
+      if (categoryScroll.scrollLeft <= 20) {
+        leftScrollBtn.classList.add('hidden');
+        rightScrollBtn.classList.remove('hidden');
+      } else if (categoryScroll.scrollLeft >= maxScrollLeft - 20) {
+        leftScrollBtn.classList.remove('hidden');
+        rightScrollBtn.classList.add('hidden');
+      } else {
+        leftScrollBtn.classList.remove('hidden');
+        rightScrollBtn.classList.remove('hidden');
+      }
+    }
+
+    document.querySelectorAll('.scroll-btn').forEach((button) => {
+      button.addEventListener('click', () => {
+        const targetId = button.dataset.scrollTarget;
+        const direction = button.dataset.direction === 'left' ? -1 : 1;
+        const scrollTarget = document.getElementById(targetId);
+
+        if (!scrollTarget) return;
+
+        const amount = Math.max(scrollTarget.clientWidth * 0.75, 220);
+        scrollTarget.scrollBy({
+          left: direction * amount,
+          behavior: 'smooth'
+        });
+
+        setTimeout(updateCategoryScrollButtons, 250);
+      });
+    });
+
+    if (categoryScroll) {
+      categoryScroll.addEventListener('scroll', updateCategoryScrollButtons);
+      updateCategoryScrollButtons();
+    }
+  </script>
+
+ <div class="bg-[#d33725] flex items-center justify-center w-full">
+
+  <!-- Main Container -->
+  <div id="top" class="relative w-full max-w-none py-8 px-0  sm:px-0">
+    
+    <!-- Section Title -->
+    <h2 class="text-[22px]  max-w-7xl mx-auto relative font-bold mb-5 tracking-tight text-[#0F1111] ">
+      Navaratri Celebration
+    </h2>
+
+    <!-- Carousel Wrapper -->
+    <div class=" max-w-7xl mx-auto relative">
+      
+      <!-- Cards Scroll Container -->
+      <div id="scrollContainer" class="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar pb-2">
+        
+        <!-- Card 1 -->
+        <div class="flex-none w-[450%] sm:w-[30%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20250630/fR0J/68624d13e590ff066e093f6b/-473Wx593H-700746210-pink-MODEL6.jpg" alt="Vibrant Navratri Hues" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Vibrant Navratri Hues</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm sm:text-base text-center">Min 40% off</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex-none w-[45%] sm:w-[28%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="https://tifara.in/wp-content/uploads/2025/12/IT_1807.jpg" alt="Ornate Oxidised Jewels" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Ornate Oxidised Jewels</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm sm:text-base text-center">Up to 70% off</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex-none w-[45%] sm:w-[28%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="https://img2.ogaanindia.com/pub/media/catalog/product/cache/3f6619daccdb194398d06464ab49fa6e/i/t/itrhwd422.jpg" alt="Luminous Mirror Work" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Luminous Mirror Work</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm sm:text-base text-center">Starting at ₹699</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flex-none w-[45%] sm:w-[28%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="https://sheetalbatra.com/cdn/shop/products/HotpinkFloralTillaEmbroideryOdhni__1_large.jpg?v=1749190669" alt="Dramatic Dupattas" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Dramatic Dupattas</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm sm:text-base text-center">Starting at ₹299</span>
+        </div>
+
+         <!-- Card 5-->
+        <div class="flex-none w-[45%] sm:w-[28%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="https://roopkala.net/cdn/shop/files/rosette-red-embroidered-bridal-lehenga-for-pheras-RKMLSQ1194CC_3_720x.jpg?v=1758701033" alt="festive fusion" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Festive Fusion Looks</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm  sm:text-base text-center">Up to 50% off</span>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flex-none w-[45%] sm:w-[28%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="https://assets.myntassets.com/w_200,q_50,,dpr_3,fl_progressive,f_webp/assets/images/2026/JUNE/21/fgtYd5fi_102769f2071747b59d735e1addaaf1df.jpg" alt="Playful Kedia tops" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Playful Kedia tops</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm  sm:text-base text-center">Up to 50% off</span>
+        </div>
+        <!-- Card 7 -->
+        <div class="flex-none w-[45%] sm:w-[28%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWWJW7ulxTZyZQc5sWmt6hXD6Cgnq9rc97H6wS9PgdXiKskzSyPSJaELm&s=10" alt="Playful Kedia tops" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Batua & Potlis</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm  sm:text-base text-center">Up to 50% off</span>
+        </div>
+       
+
+      <!-- card-8 -->
+        <div class="flex-none w-[45%] sm:w-[28%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="./Screenshot 2026-09-26 140729.png" alt="Playful Kedia tops" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Silk-Sarees</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm  sm:text-base text-center">Up to 50% off</span>
+        </div>
+       
+
+      <!-- card-9 -->
+        <div class="flex-none w-[45%] sm:w-[28%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="./Screenshot 2026-09-26 141204.png" alt="Playful Kedia tops" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Stunning Sharara Set</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm  sm:text-base text-center">Up to 60% off</span>
+        </div>
+      <!-- card-10 -->
+        <div class="flex-none w-[45%] sm:w-[28%] md:w-[18.5%] flex flex-col items-center group cursor-pointer">
+          <div class="relative w-full aspect-[3/4] gold-border overflow-hidden mb-3">
+            <img src="./Screenshot 2026-09-26 141530.png" alt="Playful Kedia tops" class="w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent flex items-end justify-center pb-3 px-1">
+              <span class="text-white serif-text italic text-sm sm:text-base text-center leading-tight">Garba-Ready kids</span>
+            </div>
+          </div>
+          <span class="text-[#0d141e] font-bold text-sm  sm:text-base text-center">Up to 50% off</span>
+        </div>
+       
+
+      </div>
+
+      <!-- Horizontal Scroll Right Button -->
+      <button 
+        onclick="scrollRightCarousel()" 
+        aria-label="Next items"
+        class="absolute -right-3 top-[42%] -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors z-10">
+        <i class="bi bi-chevron-right text-gray-700 text-lg"></i>
+      </button>
+
+    </div>
+  </div>
+ </div>
+ 
+
+  <script>
+    // Scroll Carousel Right Function
+    function scrollRightCarousel() {
+      const container = document.getElementById('scrollContainer');
+      container.scrollBy({ left: 240, behavior: 'smooth' });
+    }
+
+    // Scroll Page to Top Function
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+  <!-- nykaa wali shaadi -->
+   <div class="bg-[#FFF6E9] p-5">
+
+  <!-- Main Section Container -->
+  <section class="max-w-7xl mx-auto relative group">
+    
+    <!-- Title -->
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Nykaa Wali Shaadi</h2>
+
+    <!-- Carousel Wrapper -->
+    <div class="relative">
+      
+      <!-- Left Scroll Button (Hidden by Default at start) -->
+      <button 
+        id="prevBtn" 
+        onclick="scrollCarousel(-600)" 
+        class="hidden absolute -left-5 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg border border-gray-100 items-center justify-center text-gray-700  z-20 "
+        aria-label="Scroll left"
+      >
+        <i class="bi bi-chevron-left text-lg"></i>
+      </button>
+
+      <!-- Horizontal Scrollable Cards Container -->
+      <div 
+        id="carousel" 
+        onscroll="updateButtonVisibility()"
+        class="flex gap-5 overflow-x-auto scroll-smooth no-scrollbar py-2 px-1"
+      >
+
+        <!-- Card 0 -->
+        <div class="wedding-card relative  overflow-hidden  cursor-pointer">
+          <img src="https://images-static.nykaa.com/uploads/bcd638aa-4c3d-40f6-949b-6907446b1c55.jpg?tr=cm-pad_resize,w-300" alt="The Dulhan's Closet" class="w-full">
+        </div>
+        <!-- Card 1 -->
+        <div class="wedding-card relative  overflow-hidden  cursor-pointer">
+          <img src="https://images-static.nykaa.com/uploads/b0fdb642-c95a-48e0-a4fb-7bfc3e0e5343.jpg?tr=cm-pad_resize,w-300" alt="The Dulhan's Closet" class="w-full">
+        </div>
+        <!-- Card 2 -->
+        <div class="wedding-card relative  overflow-hidden  cursor-pointer">
+          <img src="https://images-static.nykaa.com/uploads/ec1960c8-a18b-4d6a-b129-78d7eebe1c9b.jpg?tr=cm-pad_resize,w-300" alt="The Dulhan's Closet" class="w-full">
+        </div>
+        <!-- Card 3 -->
+        <div class="wedding-card relative  overflow-hidden  cursor-pointer">
+          <img src="https://images-static.nykaa.com/uploads/b0230604-a881-4e56-9b96-e3850c8f9f42.jpg?tr=cm-pad_resize,w-300" alt="The Dulhan's Closet" class="w-full">
+        </div>
+        <!-- Card 4 -->
+        <div class="wedding-card relative  overflow-hidden  cursor-pointer">
+          <img src="https://images-static.nykaa.com/uploads/444302f0-04a7-438d-bc7f-0af6367a03af.jpg?tr=cm-pad_resize,w-300" alt="The Dulhan's Closet" class="w-full">
+        </div>
+        <!-- Card 5 -->
+        <div class="wedding-card relative  overflow-hidden  cursor-pointer">
+          <img src="https://images-static.nykaa.com/uploads/cbbdd472-1ce8-4874-af01-31277b7d3821.jpg?tr=cm-pad_resize,w-300" alt="The Dulhan's Closet" class="w-full">
+        </div>
+        <!-- Card 6 -->
+        <div class="wedding-card relative  overflow-hidden  cursor-pointer">
+          <img src="https://images-static.nykaa.com/uploads/19748be7-a1c3-43a2-95a8-ccf1925b5f45.jpg?tr=cm-pad_resize,w-300" alt="The Dulhan's Closet" class="w-full">
+        </div>
+        <!-- Card 7 -->
+        <div class="wedding-card relative  overflow-hidden  cursor-pointer">
+          <img src="https://images-static.nykaa.com/uploads/e82db3ba-c714-4447-bd99-d2a1d547ac06.jpg?tr=cm-pad_resize,w-300" alt="The Dulhan's Closet" class="w-full">
+        </div>
+        <!-- Card 8 -->
+        <div class="wedding-card relative  overflow-hidden  cursor-pointer">
+          <img src="https://images-static.nykaa.com/uploads/93581fa0-81c9-4024-a7e0-bb53453f1eb3.jpg?tr=cm-pad_resize,w-300" alt="The Dulhan's Closet" class="w-full">
+        </div>
+
+          </div>
+    </div>
+
+      <!-- Right Scroll Button -->
+      <button 
+        id="nextBtn" 
+        onclick="scrollCarousel(600)" 
+        class="flex absolute -right-5 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg border border-gray-100 items-center justify-center text-gray-700 hover:bg-gray-50 z-20 transition-all duration-200"
+        aria-label="Scroll right"
+      >
+        <i class="bi bi-chevron-right text-lg"></i>
+      </button>
+
+    </div>
+    
+  </section>
+
+  <!-- Scroll Logic JavaScript -->
+  <script>
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    function scrollCarousel(distance) {
+      carousel.scrollBy({
+        left: distance,
+        behavior: 'smooth'
+      });
+    }
+
+    function updateButtonVisibility() {
+      const scrollLeft = carousel.scrollLeft;
+      const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+
+      // Show or hide Left Button when scrolled right
+      if (scrollLeft > 10) {
+        prevBtn.classList.remove('hidden');
+        prevBtn.classList.add('flex');
+      } else {
+        prevBtn.classList.add('hidden');
+        prevBtn.classList.remove('flex');
+      }
+
+      // Hide Right Button when end reached
+      if (scrollLeft >= maxScrollLeft - 10) {
+        nextBtn.classList.add('hidden');
+        nextBtn.classList.remove('flex');
+      } else {
+        nextBtn.classList.remove('hidden');
+        nextBtn.classList.add('flex');
+      }
+    }
+
+    // Initial check on load
+    window.addEventListener('DOMContentLoaded', updateButtonVisibility);
+  </script>
+  
+   
+   <!-- luxe -->
+    <div class="relative min-h-screen bg-[#1b030b] text-white font-sans p-6 md:p-12 flex items-center justify-center">
+  <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+    
+    <!-- Left Hero Section with 4-Side Edge Fade -->
+    <a href="" class="lg:col-span-6 group relative flex flex-col justify-end min-h-[480px] lg:min-h-[620px] rounded-lg shadow-2xl overflow-hidden bg-[#1b030b]">
+      
+      <!-- Background Image Container with 4-Side Faded Edges -->
+      <div class="absolute inset-0 bg-cover bg-center  [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent),linear-gradient(to_right,transparent,black_15%,black_85%,transparent)] [mask-composite:intersect]" style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3bf59e199971513.665a387fcb44a.jpg');"></div>
+      
+      <!-- Dark Gradient Overlay for text contrast -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#1b030b] via-tr1200ansparent to-transparent opacity-90"></div>
+      
+      <div class="relative z-10 p-6 md:p-10 space-y-4">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif tracking-wider uppercase font-normal leading-tight drop-shadow-md">
+          Luxe Edit
+        </h1>
+        <p class="text-sm md:text-base text-gray-200 tracking-wide max-w-xs font-light">
+          A Spectacular assortment of minimal yet alluring styles
+        </p>
+        <div class="pt-2">
+          <span class="inline-flex items-center gap-2 px-5 py-2.5 bg-black/80 backdrop-blur-sm text-white text-sm font-medium rounded border border-white/20 hover:border-white transition-colors">
+            Shop Now &rarr;
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Right Grid Section (4 Cards with 4-Side Faded Edges) -->
+    <div class="lg:col-span-6 grid grid-cols-2 gap-4 md:gap-6">
+      
+      <!-- Card 1 -->
+      <a href="" class="group flex flex-col space-y-2">
+        <div class="aspect-[3/4] w-full overflow-hidden bg-[#1b030b]">
+          <img src="https://i.pinimg.com/1200x/36/78/b1/3678b1d8437fae64f8a0584cd25fd4e7.jpg" alt="Bridesmaid Edit" class="w-full h-full object-cover [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent),linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] [mask-composite:intersect]">
+        </div>
+        <span class="text-xs md:text-lg tracking-wide text-gray-300 group-hover:text-white transition-colors">Bridesmaid Edit</span>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="" class="group flex flex-col space-y-2">
+        <div class="aspect-[3/4] w-full overflow-hidden bg-[#1b030b]">
+          <img src="https://i.pinimg.com/736x/40/39/ba/4039ba1d50797a76845327183e71aed2.jpg" alt="Travel & Resort" class="w-full h-full object-cover  [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent),linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] [mask-composite:intersect]">
+        </div>
+        <span class="text-xs md:text-lg tracking-wide text-gray-300 group-hover:text-white transition-colors">Travel &amp; Resort</span>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="" class="group flex flex-col space-y-2">
+        <div class="aspect-[3/4] w-full overflow-hidden bg-[#1b030b]">
+          <img src="https://i.pinimg.com/1200x/35/b2/97/35b2975aa8a0628e0dd9e37bcb2cb7ed.jpg" alt="Sequined Diva" class="w-full h-full object-cover  [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent),linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] [mask-composite:intersect]">
+        </div>
+        <span class="text-xs md:text-lg tracking-wide text-gray-300 group-hover:text-white transition-colors">Sequined Diva</span>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="" class="group flex flex-col space-y-2">
+        <div class="aspect-[3/4] w-full overflow-hidden bg-[#1b030b]">
+          <img src="https://i.pinimg.com/736x/9b/6a/a3/9b6aa3f613544ec3c44ca462870182fc.jpg" alt="Under 20K Store" class="w-full h-full object-cover [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent),linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] [mask-composite:intersect]">
+        </div>
+        <span class="text-xs md:text-lg tracking-wide text-gray-300 group-hover:text-white transition-colors">Under 20K Store</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <a href="#top" aria-label="Back to top" class="fixed bottom-6 right-6 bg-white/90 backdrop-blur-sm text-black p-3 rounded border border-gray-300 shadow-lg hover:bg-white transition-colors flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </a>
+</div>
+
+<section class="max-w-7xl mx-auto px-4 py-5 bg-white text-gray-900 font-sans relative">
+  <!-- Section Header -->
+  <div class="mb-6">
+    <span class="text-xs font-medium text-gray-500 uppercase  block mb-1">
+      Explore More
+    </span>
+    <h2 class="text-2xl font-bold  text-gray-900">
+      Find everything for your every need
+    </h2>
+  </div>
+
+  <!-- Categories Scroll Container -->
+  <div class="relative group">
+    <div class="flex items-center space-x-6 overflow-x-auto scrollbar-none py-2 scroll-smooth">
+      
+      <!-- Item: Women -->
+      <a href="#" class="flex flex-col items-center flex-shrink-0 group/item">
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-3 border border-gray-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+          <img src="https://i.pinimg.com/1200x/af/21/03/af2103348cb1296e3a61c030352c9513.jpg" alt="Women" class="w-full h-full object-cover">
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-gray-800 group-hover/item:text-black">Women</span>
+      </a>
+
+      <!-- Item: Men -->
+      <a href="#" class="flex flex-col items-center flex-shrink-0 group/item">
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-3 border border-gray-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+          <img src="https://i.pinimg.com/736x/09/ac/e3/09ace37fb8460ded9b4f186f4890b594.jpg" alt="Men" class="w-full h-full object-cover">
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-gray-800 group-hover/item:text-black">Men</span>
+      </a>
+
+      <!-- Item: Kids -->
+      <a href="#" class="flex flex-col items-center flex-shrink-0 group/item">
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-3 border border-gray-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+          <img src="https://i.pinimg.com/736x/f7/18/08/f718084d61dab54441378c25f4cbdcee.jpg" alt="Kids" class="w-full h-full object-cover">
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-gray-800 group-hover/item:text-black">Kids</span>
+      </a>
+
+      <!-- Item: Home -->
+      <a href="#" class="flex flex-col items-center flex-shrink-0 group/item">
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-3 border border-gray-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+          <img src="https://i.pinimg.com/736x/9d/75/98/9d759804e2f21d8d6b3caef8f71fb0ee.jpg" alt="Home" class="w-full h-full object-cover">
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-gray-800 group-hover/item:text-black">Home</span>
+      </a>
+
+      <!-- Item: Luxe Store -->
+      <a href="#" class="flex flex-col items-center flex-shrink-0 group/item">
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-3 border border-gray-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+          <img src="https://i.pinimg.com/736x/45/12/5c/45125c8cb0d88765bde0bebf51c85071.jpg" alt="Luxe Store" class="w-full h-full object-cover">
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-gray-800 group-hover/item:text-black">Luxe Store</span>
+      </a>
+
+      <!-- Item: Hidden Gems -->
+      <a href="#" class="flex flex-col items-center flex-shrink-0 group/item">
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-3 border border-gray-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+          <img src="https://i.pinimg.com/736x/83/52/52/835252f2a8951a94ca73e08bfcfb6a39.jpg" alt="Hidden Gems" class="w-full ">
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-gray-800 group-hover/item:text-black">Hidden Gems</span>
+      </a>
+
+      <!-- Item: Global Store -->
+      <a href="#" class="flex flex-col items-center flex-shrink-0 group/item">
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-3 border border-gray-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+          <img src="https://i.pinimg.com/736x/9d/81/f0/9d81f0b8c859c0c8fe8266b0f6a429ff.jpg" alt="Global Store" class="w-full ">
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-gray-800 group-hover/item:text-black">Global Store</span>
+      </a>
+
+      <!-- Item: Revolve -->
+      <a href="#" class="flex flex-col items-center flex-shrink-0 group/item">
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-3 border border-gray-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+          <img src="https://i.pinimg.com/736x/a5/a7/74/a5a7743886ea77f318eed6509a1ee779.jpg" alt="Revolve" class="w-full ">
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-gray-800 group-hover/item:text-black">Revolve</span>
+      </a>
+
+      <!-- Item: House of Ny -->
+      <a href="#" class="flex flex-col items-center flex-shrink-0 group/item">
+        <div class="w-24 h-26 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-3 border border-gray-100 shadow-sm transition-transform duration-300 group-hover/item:scale-105">
+          <img src="https://i.pinimg.com/736x/1f/d2/55/1fd255b8fd6307e1038aadd150a8eeb8.jpg" alt="House of Ny" class="w-full  ">
+        </div>
+        <span class="text-xs sm:text-sm font-medium text-gray-800 group-hover/item:text-black">House of Ny</span>
+      </a>
+
+    </div>
+
+    <!-- Right Navigation Arrow Button -->
+    <button aria-label="Next categories" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-10 h-10 rounded-full bg-white shadow-md border border-gray-200 text-gray-700 hover:bg-gray-50 hover:text-black transition-colors flex items-center justify-center z-10">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</section>
+
+<div class="disclaimer">
+  <div class="container">
+    <div class="disclaimer-card">
+  <div class="disclaimer-content">
+    <p class="disclaimer-title">
+      <span class="warning-icon">⚠️</span> Disclaimer :
+    </p>
+    <p class="disclaimer-text">
+      Please be vigilant in dealing with unscrupulous persons claiming to be Nykaa employees / representatives offering franchisees, employment, free gifts / prizes / discounts or otherwise offering any association with Nykaa. Nykaa does not offer franchising opportunities through unsolicited phone calls, emails etc. nor does it solicit payments of advance fee etc. to / through external links or otherwise. Nykaa also does not seek any placement fees, course fee, charges etc. from aspiring job applicants. Please avoid dealing with such unscrupulous persons, disclosing any personal information to them or making any payments without proper verification. Nykaa will not be liable for any claims, loss, damages connected to these fraudulent activities.
+    </p>
+  </div>
+</div>
+
+
+
+  </div>
+
+</div>
+
+
+<div id="text" class="bg-white font-sans text-[#3B424D] antialiased">
+
+  <section class="max-w-7xl mx-auto px-6 py-8 leading-relaxed">
+    
+    <!-- Main Title -->
+    <h1 class="text-[17px] font-bold text-[#001325] mb-2 tracking-tight">
+      Nykaa Fashion – Online Shopping Website
+    </h1>
+
+    <!-- Section Header -->
+    <h2 class="text-[15px] font-bold text-[#001325] uppercase tracking-wide mb-4">
+      GADGETS & TECH ACCESSORIES
+    </h2>
+
+    <!-- Introduction Paragraphs -->
+    <div class="space-y-3 mb-6 text-[14px]">
+      <p>
+        Your quest for the best gadgets and accessories ends at Nykaa Fashion. While we keep ourselves a step ahead when it comes to fashion, we also bring you the very best from the world of gadgets, tech accessories, and more. After all, they do play a role in uplifting your overall style!
+      </p>
+      <p>
+        From innovative gadgets and gizmos to tech gear and accessories, discover everything you will ever need to boost your productivity and style.
+      </p>
+    </div>
+
+    <!-- Sub-section: Cameras and Accessories -->
+    <div class="mb-6 text-[14px]">
+      <h3 class="text-[14px] font-bold text-[#001325] mb-1">
+        Cameras and Accessories
+      </h3>
+      <p>
+        If you have a flair for photography, it's about time you get a camera! Check out a range of 
+        <a href="#" class="text-[#C6426E] hover:underline">Cameras and Accessories</a> 
+        like tripods and LED rings to take your photography to the next level. You will find tons of options in terms of features, price, and more.
+      </p>
+    </div>
+
+    <!-- Sub-section: Smartwatches -->
+    <div class="mb-6 text-[14px]">
+      <h3 class="text-[14px] font-bold text-[#001325] mb-1">
+        Smartwatches
+      </h3>
+      <p>
+        Think it's time to add those amazing apps and notifications on your wrist? It's time to invest in a Smartwatch! And what better place to find one than on Nykaa Fashion which brings you stylish smartwatches with all the top features. Explore a wide range of offerings from savvy brands like 
+        <a href="#" class="text-[#C6426E] hover:underline">Fossil</a>, Oppo, 
+        <a href="#" class="text-[#C6426E] hover:underline">Fitbit</a>, 
+        <a href="#" class="text-[#C6426E] hover:underline">Pebble</a>, and more. You will also find plenty of options in Sports Watches, 
+        <a href="#" class="text-[#C6426E] hover:underline">Fitness Trackers</a>, Dress Watches, and more.
+      </p>
+    </div>
+
+    <!-- Sub-section: Smartphone Cases & Covers -->
+    <div class="text-[14px]">
+      <h3 class="text-[14px] font-bold text-[#001325] mb-1">
+        Smartphone Cases & Covers
+      </h3>
+      <p>
+        At Nykaa Fashion, you will always find plenty of 
+        <a href="#" class="text-[#C6426E] hover:underline">Cases and Covers</a> 
+        to keep your smartphone safe, stylish or both. They are available in various styles and materials ranging from Metal, Leather, Rubber, Plastic, Glass, and more. Apart from mobile cases, you will find 
+        <a href="#" class="text-[#C6426E] hover:underline">Laptops Covers</a>, Tablet Covers, Headphone Covers, Watch Bands, and more. Get these from top brands like Apple, Samsung, and OnePlus, Realme, other popular names such as 
+        <a href="#" class="text-[#C6426E] hover:underline">Chumbak</a>, 
+        <a href="#" class="text-[#C6426E] hover:underline">Macmerise</a>, Na-Kd, and 
+        <a href="#" class="text-[#C6426E] hover:underline">Mvyno</a>.
+      </p>
+
+
+    </div>
+    <div class="mb-6">
+      <h3 class="text-[14px] font-bold text-[#001325] mb-1">
+        Smartphone Cases & Covers
+      </h3>
+      <p>
+        At Nykaa Fashion, you will always find plenty of 
+        <a href="#" class="text-[#C6426E] hover:underline">Cases and Covers</a> 
+        to keep your smartphone safe, stylish or both. They are available in various styles and materials ranging from Metal, Leather, Rubber, Plastic, Glass, and more. Apart from mobile cases, you will find 
+        <a href="#" class="text-[#C6426E] hover:underline">Laptops Covers</a>, Tablet Covers, Headphone Covers, Watch Bands, and more. Get these from top brands like Apple, Samsung, and OnePlus, Realme, other popular names such as 
+        <a href="#" class="text-[#C6426E] hover:underline">Chumbak</a>, 
+        <a href="#" class="text-[#C6426E] hover:underline">Macmerise</a>, Na-Kd, and 
+        <a href="#" class="text-[#C6426E] hover:underline">Mvyno</a>.
+      </p>
+    </div>
+
+    <!-- Speakers -->
+    <div class="mb-6">
+      <h3 class="text-[14px] font-bold text-[#001325] mb-1">
+        Speakers
+      </h3>
+      <p>
+        If you are still on the lookout for the perfect 
+        <a href="#" class="text-[#C6426E] hover:underline">Speakers</a> 
+        that suit your audiophile needs and fit your budget, you are guaranteed to find them at Nykaa Fashion. From global brands like 
+        <a href="#" class="text-[#C6426E] hover:underline">JBL</a> and Amazon to top Indian players such as 
+        <a href="#" class="text-[#C6426E] hover:underline">Boat</a>, 
+        <a href="#" class="text-[#C6426E] hover:underline">Portronics</a>, and 
+        <a href="#" class="text-[#C6426E] hover:underline">Fingers</a>, there's a wide range of brands to choose from - be it for home media systems or your car.
+      </p>
+    </div>
+
+    <!-- Headphones -->
+    <div class="mb-6">
+      <h3 class="text-[14px] font-bold text-[#001325] mb-1">
+        Headphones
+      </h3>
+      <p>
+        If you're bored of your old headphones and planning to buy one that truly rocks, look no further! At Nykaa Fashion, you will find almost every type of 
+        <a href="#" class="text-[#C6426E] hover:underline">Headphone</a> for your needs. Available in various designs, sizes, and connectivity types, find 
+        <a href="#" class="text-[#C6426E] hover:underline">Bluetooth Headphones</a>, 
+        <a href="#" class="text-[#C6426E] hover:underline">True Wireless Headphones</a>, Wireless on Ear Headphones, Wireless Over the Ear Headphones, and more from popular brands like 
+        <a href="#" class="text-[#C6426E] hover:underline">Boult Audio</a>, 
+        <a href="#" class="text-[#C6426E] hover:underline">Skullcandy</a>, JBL, Boat, and 
+        <a href="#" class="text-[#C6426E] hover:underline">Hammer</a>, among others.
+      </p>
+    </div>
+    <div class="mb-6">
+      <h3 class="text-[14px] font-bold text-[#001325] mb-1">
+        NYKAA FASHION LUXE
+      </h3>
+      <p>
+       
+If you desire a bit of luxury in life and wish to take your style game up a notch, we bring youNykaa Fashion Luxe– a segment that offers head-turning styles and statement accessories to all luxury connoisseurs including Men, Women, and Kids. Think of popular designer brands and local hidden gems with dedicated offerings ranging from luxe watches, apparel, bags, footwear and more.
+<br><br>
+Luxe for Men <br><br>
+Find everything from men's apparel and Watches to bags and personal accessories – all made with supreme quality fabrics and materials for a strong style statement.
+
+Brands to keep an eye on:Urvashi Kaur, Wendell Rodricks,Echke, Carte Blanche, andZeppelinamong others.
+
+        <a href="#" class="text-[#C6426E] hover:underline"> men's apparel</a> 
+        <a href="#" class="text-[#C6426E] hover:underline">Luxe for Women</a>, 
+        <a href="#" class="text-[#C6426E] hover:underline"></a>, 
+        <a href="#" class="text-[#C6426E] hover:underline"></a>,  
+        <a href="#" class="text-[#C6426E] hover:underline"></a>, 
+      </p>
+    </div>
+
+    <!-- Power Banks And Chargers -->
+    <div class="space-y-3">
+      <h3 class="text-[14px] font-bold text-[#001325] mb-1">
+        Power Banks And Chargers
+      </h3>
+      <p>
+        Keep your smartphones, tablets and other media devices always topped up with the best Chargers and power banks. At Nykaa Fashion, you will find multi-functional chargers with various connectivity options like USB, Firewire, Wireless, USB-C, and Wi-Fi from top brands.
+      </p>
+      <p>
+        If you have the perfect charger at home, you might need a power bank for when you're on the go. Choose from a range of options for your smartphone, tablet, Mp3 player or digital camera with capacity going up from 5000mAh to 27000mAh.
+      </p>
+    </div>
+
+    <!-- HIDDEN GEMS -->
+    <div class="mb-8">
+      <h2 class="text-[15px] font-bold text-[#001325] uppercase tracking-wide mb-3">
+        HIDDEN GEMS
+      </h2>
+      <div class="space-y-3">
+        <p>
+          Nykaa Fashion brings you <a href="#" class="text-[#C6426E] hover:underline">Hidden Gems</a> – a curation of niche home grown labels that are deeply rooted in Indian craftsmanship and offer pieces that are mindfully handmade by local artisans. These niche labels stay true to the ethos of hidden gems by interpreting modern fashion trends and advancing craft techniques, giving birth to the most exquisite creations that you will find only on Nykaa Fashion.
+        </p>
+        <p>
+          The hidden gems curation presents labels from across the country, offering a beautiful mix of traditional and contemporary fashion. From <a href="#" class="text-[#C6426E] hover:underline">Label Shaurya Sanadhya</a>, <a href="#" class="text-[#C6426E] hover:underline">Nuhh</a>, and <a href="#" class="text-[#C6426E] hover:underline">Rozana Jaipur</a> to <a href="#" class="text-[#C6426E] hover:underline">Swtantra</a>, <a href="#" class="text-[#C6426E] hover:underline">Baise Gaba</a>, and <a href="#" class="text-[#C6426E] hover:underline">Gulaboo Jaipur</a>, discover young and vibrant labels that champion modern Indian design.
+        </p>
+        <p>
+          Look out for Indian staples like salwar suits, sarees, kurtas, and lehengas or experiment with a range of fusion separates. Indigenous craftsmanship and age-old techniques of embroidery, stitching and weaving have a much-deserved moment in these creations. Apart from apparel, the hidden gems category also offers a range of accessories, jewellery, footwear, bags and more. You will find pieces for every occasion such as Festive, Casual, <a href="#" class="text-[#C6426E] hover:underline">Formal</a>, <a href="#" class="text-[#C6426E] hover:underline">Semi-Formal</a>, Wedding, and others.
+        </p>
+      </div>
+    </div>
+
+    <!-- STYLE INSPIRATION - LATEST FASHION TRENDS -->
+    <div class="mb-8">
+      <h2 class="text-[15px] font-bold text-[#001325] uppercase tracking-wide mb-3">
+        STYLE INSPIRATION - LATEST FASHION TRENDS
+      </h2>
+      <div class="space-y-3">
+        <p>
+          From traditional Indian wear to contemporary and into-western wear, Nykaa Fashion brings you the latest in fashion in an array of styles. While there are plenty of trends to look out for, the world of fashion is greatly inspired by comfortable clothing.
+        </p>
+        <p>
+          Comfortable clothing has become a trend itself and it is certainly here to stay. Nykaa Fashion has a special Minimal Utility collection from Twenty Dresses that offers a winning combination of style and comfort. So get ready for the ease of movement while being your stylish best in dresses made from breathable fabrics with the finest details and soothing hues.
+        </p>
+        <p>
+          If you're looking for Celebrity-Inspired Styles that will have you turning heads, check out the latest designs from <a href="#" class="text-[#C6426E] hover:underline">Masaba</a> on Nykaa Fashion that have been a huge hit among Bollywood celebs. Known for its whimsical, bright prints and fusion wear designs, the label will be your go-to for big events.
+        </p>
+      </div>
+    </div>
+
+    <!-- SUSTAINABILITY & NYKAA -->
+    <div>
+      <h2 class="text-[15px] font-bold text-[#001325] uppercase tracking-wide mb-3">
+        SUSTAINABILITY & NYKAA
+      </h2>
+      <div class="space-y-3">
+        <p>
+          Nykaa Fashion is making every effort to bring sustainable fashion into the limelight through its special edit - <a href="#" class="text-[#C6426E] hover:underline">The Responsible Collection</a>. It features a mix of sustainability-focused labels from both popular and upcoming labels. These carefully curated brands represent the advocates of sustainable fashion that focus on using organic materials, recycled products, and upcycled products for sustainable development.
+        </p>
+        <p>
+          Nykaa Fashion also uses a special 'responsible' tag for products that engage in sustainable practices. We also deliver 90% of our orders in eco friendly packaging made from recyclable paper flyers.
+        </p>
+        <p>
+          Sustainable labels worth checking out: Chumbak, NA-KD, <a href="#" class="text-[#C6426E] hover:underline">Diwaah</a>, <a href="#" class="text-[#C6426E] hover:underline">Kicks And Crawl</a>, <a href="#" class="text-[#C6426E] hover:underline">Cavallo By Linen Club</a>, <a href="#" class="text-[#C6426E] hover:underline">Charukriti</a>, <a href="#" class="text-[#C6426E] hover:underline">Ed-A-Mamma</a>, <a href="#" class="text-[#C6426E] hover:underline">Khara Kapas</a>, <a href="#" class="text-[#C6426E] hover:underline">Monk & Mei</a> and <a href="#" class="text-[#C6426E] hover:underline">Paio</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- footer -->
+
+  <div class="bg-gray-100 font-sans">
+
+  <footer class="container-fluid">
+    <!-- Top Dark Bar -->
+    <div class="bg-[#333333] text-white py-6 px-6 ">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        
+        <!-- App Download Section -->
+        <div>
+          <h4 class="text-[12px] font-bold uppercase tracking-wider mb-3">
+            DOWNLOAD OUR APP
+          </h4>
+          <div class="flex items-center gap-3">
+            <!-- Google Play Store Button -->
+            <a href="#" class="inline-block hover:opacity-90 transition-opacity">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                alt="Get it on Google Play" 
+                class="h-10 border border-gray-600 rounded-md"
+              />
+            </a>
+            <!-- Apple App Store Button -->
+            <a href="#" class="inline-block hover:opacity-90 transition-opacity">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
+                alt="Download on the App Store" 
+                class="h-10 border border-gray-600 rounded-md"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Support Call Section -->
+        <div>
+          <h4 class="text-[12px] font-bold uppercase tracking-wider mb-1">
+            FOR ANY HELP, YOU MAY CALL US AT
+          </h4>
+          <div class="text-[13px] text-gray-200">
+            <span class="font-bold text-white">1800-266-3333</span>
+            <span class="text-gray-300 ml-1">(Monday to Saturday: 10 am - 10 pm, Sunday: 10 am - 7 pm)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Light Bar -->
+    <div class="bg-[#F2F4F5] text-[#3B424D] py-10 px-6 md:px-16">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
+
+        <!-- Column 1: WHO ARE WE -->
+        <div>
+          <h5 class="text-[13px] font-bold text-[#001325] uppercase tracking-wider mb-4">
+            WHO ARE WE
+          </h5>
+          <ul class="space-y-2 text-[13px]">
+            <li><a href="#" class="hover:underline">About Us</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+            <li><a href="#" class="hover:underline">Press</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: HELP -->
+        <div>
+          <h5 class="text-[13px] font-bold text-[#001325] uppercase tracking-wider mb-4">
+            HELP
+          </h5>
+          <ul class="space-y-2 text-[13px]">
+            <li><a href="#" class="hover:underline">Shipping & Return Policy</a></li>
+            <li><a href="#" class="hover:underline">Help Center</a></li>
+            <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Legal & Policies -->
+        <div class="md:pt-8">
+          <ul class="space-y-2 text-[13px]">
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Responsible Disclosure</a></li>
+            <li><a href="#" class="hover:underline">Sell on Nykaa Fashion</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: QUICKLINKS -->
+        <div>
+          <h5 class="text-[13px] font-bold text-[#001325] uppercase tracking-wider mb-4">
+            QUICKLINKS
+          </h5>
+          <ul class="space-y-2 text-[13px]">
+            <li><a href="#" class="hover:underline">Offers</a></li>
+            <li><a href="#" class="hover:underline">Sitemap</a></li>
+            <li><a href="#" class="hover:underline">Style Files</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: FOLLOW US -->
+        <div>
+          <h5 class="text-[13px] font-bold text-[#001325] uppercase tracking-wider mb-4">
+            FOLLOW US
+          </h5>
+          <div class="flex items-center gap-2">
+            <a href="#" class="w-8 h-8 rounded bg-[#2A313A] text-white flex items-center justify-center text-lg hover:opacity-80 transition-opacity" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="w-8 h-8 rounded bg-[#2A313A] text-white flex items-center justify-center text-lg hover:opacity-80 transition-opacity" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+    
+  </div>
+  </section>
+</div>
+
+
+<!-- copyright -->
+
+<div class="bg-white font-sans antialiased text-[#3B424D] relative">
+
+  <section class="max-w-7xl mx-auto px-6 py-10">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-[13px] leading-relaxed">
+
+      <!-- Column 1: WOMEN -->
+      <div>
+        <h4 class="text-[13px] font-bold text-[#001325] uppercase tracking-wide mb-3">
+          WOMEN
+        </h4>
+        <ul class="space-y-1.5">
+          <li><a href="#" class="hover:text-black transition-colors">Women's Indianwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Women's Westernwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Bags</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Women's Footwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Women's Jewellery</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Lingerie</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Women's Sportswear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Women's Sleep & lounge</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Women's Watches</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Fashion Accessories</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: MEN -->
+      <div>
+        <h4 class="text-[13px] font-bold text-[#001325] uppercase tracking-wide mb-3">
+          MEN
+        </h4>
+        <ul class="space-y-1.5">
+          <li><a href="#" class="hover:text-black transition-colors">Topwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Bottomwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Ethnicwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Men's Footwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Men's Accessories</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Innerwear & Sleepwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Men's Watches</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Bags & Backpacks</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Athleisure</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Sports & Fitness</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: KIDS -->
+      <div>
+        <h4 class="text-[13px] font-bold text-[#001325] uppercase tracking-wide mb-3">
+          KIDS
+        </h4>
+        <ul class="space-y-1.5">
+          <li><a href="#" class="hover:text-black transition-colors">Kids Indianwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Kids Westernwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Kids Footwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Kids Jewellery</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Feeding</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Kids Sportswear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Kids Sleepwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Kids Accessories</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Toys & Games</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Innerwear</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: LUXE -->
+      <div>
+        <h4 class="text-[13px] font-bold text-[#001325] uppercase tracking-wide mb-3">
+          LUXE
+        </h4>
+        <ul class="space-y-1.5">
+          <li><a href="#" class="hover:text-black transition-colors">Luxury Ethnic Wear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Luxury Westernwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Luxury Footwear</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Luxury Bags</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Luxury Accessories</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Luxury Watches</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Luxury Home</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Luxury Jewellery</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Summer Collection</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Luxury Dresses</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5: TOP BRANDS -->
+      <div>
+        <h4 class="text-[13px] font-bold text-[#001325] uppercase tracking-wide mb-3">
+          TOP BRANDS
+        </h4>
+        <ul class="space-y-1.5">
+          <li><a href="#" class="hover:text-black transition-colors">Puma</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Vero Moda</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">W</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Biba</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Forever New</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Skechers</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Fablestreet</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Only</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Autumnlane</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Cider</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Accessorize London</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 6: HOUSE OF NYKAA -->
+      <div>
+        <h4 class="text-[15px] font-bold text-[#001325] uppercase tracking-wide mb-3">
+          HOUSE OF NYKAA
+        </h4>
+        <ul class="space-y-1.1">
+          <li><a href="#" class="hover:text-black transition-colors">Twenty Dresses By Nykaa Fashion</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Nykd by Nykaa</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">RSVP by Nykaa Fashion</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Gajra Gang by Nykaa Fashion</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Likha by Nykaa Fashion</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Mixt by Nykaa Fashion</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">IYKYK</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Kica</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Pipa Bella By Nykaa Fashion</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Azai by Nykaa Fashion</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Twig & Twine</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Gloot</a></li>
+          <li><a href="#" class="hover:text-black transition-colors">Nyri</a></li>
+        </ul>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-body-tertiary text-center text-sm">
+  <!-- Copyright -->
+  <div class="text-center text-white p-3" style="background-color: rgb(164, 1, 88);">
+    © 2026 Nykaa Fashion Ltd . All rights Reserved
+    <a class="text-body" href=""></a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+  
+  </body>
+</html>
